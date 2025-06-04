@@ -11,7 +11,7 @@ fn main() {
 
     let free = sys.total_memory() - sys.free_memory();
     let free_formatted = free as f64 / 1073741824.0;
-    println!("available memory : {:.2} GB", free_formatted);
+    println!("Available memory : {:.2} GB", free_formatted);
 
     // Display system information:
     println!("System name:             {:?}", System::name());
