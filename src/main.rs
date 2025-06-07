@@ -11,6 +11,9 @@ fn main() {
 
     let free = sys.total_memory() - sys.free_memory();
     let free_formatted = free as f64 / 1073741824.0;
+
+    println!("System Information:");
+    println!("Total Memory: {:.2} GB", sys.total_memory() as f64 / 1073741824.0);
     println!("Available memory : {:.2} GB", free_formatted);
 
     // Display system information:
